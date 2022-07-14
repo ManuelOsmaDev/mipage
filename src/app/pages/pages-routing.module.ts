@@ -7,6 +7,7 @@ import { LoadPanelComponent } from './load-panel/load-panel.component';
 import { VentanasComponent } from './ventanas/ventanas.component';
 import { TreeComponent } from './tree/tree.component';
 import { ArchivosComponent } from './archivos/archivos.component';
+import { FormUploadComponent } from './form-upload/form-upload.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       {path:'ventanas',component:VentanasComponent},
       {path:'tree',component:TreeComponent},
       {path:'archivos',component:ArchivosComponent},
+      {path:'form-upload',component:FormUploadComponent},
 
 
 

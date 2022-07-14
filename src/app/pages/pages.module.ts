@@ -11,6 +11,7 @@ import { VentanasComponent } from './ventanas/ventanas.component';
 import { TreeComponent } from './tree/tree.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { ArchivosComponent } from './archivos/archivos.component';
+import { FormUploadComponent } from './form-upload/form-upload.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ArchivosComponent } from './archivos/archivos.component';
     VentanasComponent,
     TreeComponent,
     NavegacionComponent,
-    ArchivosComponent
+    ArchivosComponent,
+    FormUploadComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,39 @@
+<form id="form" #form method="post" enctype="multipart/form-data">
+    <h3>Ajustes del perfil</h3>
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">Primer Nombre</div>
+        <dx-text-box class="dx-field-value"
+                     name="primer Nombre"
+                     value="Jose"  >
+
+        </dx-text-box>
+      </div>
+    </div>
+
+    <div class="dx-fieldset">
+      <div class="dx-field">
+        <div class="dx-field-label">Apellido</div>
+        <dx-text-box class="dx-field-value"
+                     name="primer Nombre"
+                     value="Sanchez"
+                     >
+
+        </dx-text-box>
+      </div>
+    </div>
+    <div id="fileuploader-container">
+      <dx-file-uploader selectButtonText="Select Photo"
+                        labelText=""
+                        accept="image/*"
+                        uploadMode="useForm">
+
+      </dx-file-uploader>
+    </div>
+    <dx-button id="button"
+                text="update profile"
+                type="success"
+                (onclick)="updateClick()">
+
+    </dx-button>
+</form>
