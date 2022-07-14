@@ -24,7 +24,7 @@ import { FormUploadComponent } from './form-upload/form-upload.component';
     TreeComponent,
     NavegacionComponent,
     ArchivosComponent,
-    FormUploadComponent
+    FormUploadComponent,
   ],
   imports: [
     CommonModule,

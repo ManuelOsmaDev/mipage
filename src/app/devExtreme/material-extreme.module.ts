@@ -7,7 +7,6 @@ import { DxTabsModule,DxFileManagerModule } from 'devextreme-angular';
 import { DxTreeMapModule,DxDrawerModule,DxRadioGroupModule} from 'devextreme-angular';
 
 
-
 @NgModule({
   declarations: [],
   exports:[
