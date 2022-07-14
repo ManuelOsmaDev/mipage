@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListComponent } from './list/list.component';
 import { MenuComponent } from './menu/menu.component';
 import { DataGridComponent } from './data-grid/data-grid.component';
+import { LoadPanelComponent } from './load-panel/load-panel.component';
+import { VentanasComponent } from './ventanas/ventanas.component';
+import { TreeComponent } from './tree/tree.component';
+import { ArchivosComponent } from './archivos/archivos.component';
 
 const routes: Routes = [
   {
@@ -11,6 +15,12 @@ const routes: Routes = [
       {path:'list',component:ListComponent},
       {path:'menu',component:MenuComponent},
       {path:'data-grid',component:DataGridComponent},
+      {path:'load-panel',component:LoadPanelComponent},
+      {path:'ventanas',component:VentanasComponent},
+      {path:'tree',component:TreeComponent},
+      {path:'archivos',component:ArchivosComponent},
+
+
 
     ]
   }

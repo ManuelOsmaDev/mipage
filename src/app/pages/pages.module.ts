@@ -6,13 +6,23 @@ import { ListComponent } from './list/list.component';
 import { MaterialExtremeModule } from '../devExtreme/material-extreme.module';
 import { MenuComponent } from './menu/menu.component';
 import { DataGridComponent } from './data-grid/data-grid.component';
+import { LoadPanelComponent } from './load-panel/load-panel.component';
+import { VentanasComponent } from './ventanas/ventanas.component';
+import { TreeComponent } from './tree/tree.component';
+import { NavegacionComponent } from './navegacion/navegacion.component';
+import { ArchivosComponent } from './archivos/archivos.component';
 
 
 @NgModule({
   declarations: [
     ListComponent,
     MenuComponent,
-    DataGridComponent
+    DataGridComponent,
+    LoadPanelComponent,
+    VentanasComponent,
+    TreeComponent,
+    NavegacionComponent,
+    ArchivosComponent
   ],
   imports: [
     CommonModule,
