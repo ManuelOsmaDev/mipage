@@ -1,0 +1,76 @@
+<h1>Data Grid</h1>
+<hr />
+
+<dx-data-grid
+  [allowColumnReordering]="true"
+  [columnAutoWidth]="true"
+  [dataSource]="employees"
+>
+  <dxi-column dataField="FullName" [groupIndex]="0" [width]="150">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="Position">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column
+    dataField="BirthDate"
+    dataField="BirthDate"
+    sortOrder="asc"
+    dataType="date"
+    [width]="80"
+  >
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="HireDate" dataType="date">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+
+  <dxi-column dataField="City"></dxi-column>
+  <dxi-column dataField="Country" [width]="50" [fixed]="true">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="Address"></dxi-column>
+  <dxi-column dataField="HomePhone"></dxi-column>
+  <dxi-column dataField="PostalCode" [visible]="false"></dxi-column>
+
+  <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+  <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+  <dxo-filter-row [visible]="true"></dxo-filter-row>
+  <dxo-search-panel [visible]="true"></dxo-search-panel>
+  <dxo-group-panel [visible]="false"> </dxo-group-panel>
+  <dxo-editing
+    mode="popup"
+    [allowAdding]="true"
+    [allowDeleting]="true"
+    [allowUpdating]="true"
+  >
+  </dxo-editing>
+  <dxo-summary>
+    <dxi-group-item summaryType="count"></dxi-group-item>
+  </dxo-summary>
+              <!-- dxo Toolbar  -->
+
+  <dxo-grouping [autoExpandAll]="expanded"></dxo-grouping>
+  <dxo-toolbar>
+    <dxi-item name="groupPanel"></dxi-item>
+    <dxi-item location="after">
+        <dx-button
+            [text]="expanded ? 'Collapse All' : 'Expand All'"
+            [width]="136"
+            (onClick)="expanded = !expanded">
+        </dx-button>
+    </dxi-item>
+    <dxi-item name="addRowButton" showText="always"></dxi-item>
+    <dxi-item name="exportButton"></dxi-item>
+    <dxi-item name="columnChooserButton"></dxi-item>
+    <dxi-item name="searchPanel"></dxi-item>
+  </dxo-toolbar>
+  <dxo-master-detail [enabled]="true"
+                      [template]="'employee-info'">
+
+  </dxo-master-detail>
+  <div class="contenedor" *dxTemplate="let employee of 'employee-info'">
+    <img class="employee-phote" [src]="employee.data.Photo">
+    <p class="employee-notes">{{ employee.data.Notes }}</p>
+  </div>
+</dx-data-grid>

@@ -1,0 +1,23 @@
+<div id="container">
+  <dx-menu (onItemClick)="onItemClick($event)" [adaptivityEnabled]="toogle">
+      <dxi-item icon="home">
+
+      </dxi-item>
+      <dxi-item
+            text="About"
+            beginGroup="true"
+        >
+        </dxi-item>
+        <dxi-item
+            text="Products"
+        >
+        </dxi-item>
+        <dxi-item
+            icon="cart"
+        >
+        </dxi-item>
+  </dx-menu>
+  <dx-check-box (onValueChanged)="onValue($event)">
+
+  </dx-check-box>
+</div>
