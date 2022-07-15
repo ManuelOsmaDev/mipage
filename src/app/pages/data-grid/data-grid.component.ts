@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { EmployeeService, Employee } from '../../services/employee.service';
 
 @Component({
@@ -10,7 +10,7 @@ export class DataGridComponent  {
   employees:Employee[]= []
   expanded: boolean = true;
 
-  constructor(private employeeService: EmployeeService) {
+  constructor(employeeService: EmployeeService) {
     this.employees = employeeService.getEmployees();
 
    }

@@ -1,8 +1,39 @@
-<dx-load-panel [hideOnOutsideClick]="true"
-                [(visible)]="isLoadPanelVisible">
-              <h1>hola</h1>
-</dx-load-panel>
-<dx-button text="Recargar"
-            (onclick)="isLoadPanelVisible = true">
+<dx-popup
+  id="popup"
+  title="Evertec Inc."
+  [showTitle]="true"
+  [width]="350"
+  [height]="450"
+  [resizeEnabled]="true"
+  contentTemplate="popup-content"
+  [(visible)]="isPopupVisible"
+  [hideOnOutsideClick]="true"
+  [dragEnabled]="true"
+  position="center"
+>
+  <div *dxTemplate="let data of 'popup-content'">
+    <img src="../../../assets/imgs/favicon.ico" alt="logo" />
+    <p>
+      <strong>Que es Evertec</strong>
+      Evertec, una compañía de servicios de procesamiento de transacciones, se
+      destaca dentro de la industria como una organización que ha puesto como
+      eje del negocio la diversidad, equidad e inclusión.
+    </p>
+    <p>
+      El desarrollo alcanzado por EVERTEC, es resultado de una filosofía que
+      mantuvo desde el comienzo: “invertir en calidad”, y con esta idea continúa
+      trabajando, pensando siempre en el crecimiento e innovación constante de
+      su porfolio de productos, sumando lo último en tecnología y brindando
+      siempre soluciones concretas.
+    </p>
+  </div>
+</dx-popup>
 
-</dx-button>
+<dx-button text="Open Modal" (onclick)="togglePopup()"> </dx-button>
+
+<h2>switch angular</h2>
+<hr />
+
+<dx-switch [value]="true">
+
+</dx-switch>

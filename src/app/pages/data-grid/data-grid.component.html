@@ -70,7 +70,7 @@
 
   </dxo-master-detail>
   <div class="contenedor" *dxTemplate="let employee of 'employee-info'">
-    <img class="employee-phote" [src]="employee.data.Photo">
+    <img class="employee-phote" alt="" [src]="employee.data.Photo">
     <p class="employee-notes">{{ employee.data.Notes }}</p>
   </div>
 </dx-data-grid>

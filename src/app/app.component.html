@@ -1,72 +1,106 @@
 
-<div>
-  <dx-button
-            stylingMode="outlined"
-            text="Product List"
-            type="success"
-            routerLink="./pages/list"
-            [width]="120"
 
-          >
+
+
+<!-- float button -->
+<div id="app-container">
+  <dx-tab-panel>
+      <dxi-item title="Menu con Botones">
+        <div>
+          <dx-button
+                    stylingMode="outlined"
+                    text="Product List"
+                    type="success"
+                    icon="checklist"
+                    routerLink="./pages/list"
+                    [width]="120"
+
+                  >
+        </dx-button>
+
+        <dx-button
+                    stylingMode="outlined"
+                    text="Menu"
+                    type="success"
+                    icon="menu"
+                    routerLink="./pages/menu"
+                    [width]="120"
+
+                  >
+        </dx-button>
+
+        <dx-button
+                    stylingMode="outlined"
+                    text="DataGrid"
+                    type="success"
+                    icon="event"
+                    routerLink="./pages/data-grid"
+                    [width]="120"
+
+                  >
+        </dx-button>
+        <dx-button
+                    stylingMode="outlined"
+                    text="ventana"
+                    type="success"
+                    routerLink="./pages/ventanas"
+                    [width]="120"
+
+                  >
+        </dx-button>
+
+        <dx-button
+                    stylingMode="outlined"
+                    text="Tree Map"
+                    icon="map"
+                    type="danger"
+                    routerLink="./pages/tree"
+                    [width]="120"
+
+                  >
+        </dx-button>
+
+        <dx-button
+                    stylingMode="outlined"
+                    text="archivos"
+                    type="default"
+                    icon="folder"
+                    routerLink="./pages/archivos"
+                    [width]="120"
+
+                  >
+        </dx-button>
+
+        <dx-button
+                    stylingMode="outlined"
+                    text="form"
+                    type="warm"
+                    icon="clearformat"
+                    routerLink="./pages/form-upload"
+                    [width]="120"
+
+                  >
+        </dx-button>
+
+        
+        <dx-button
+        stylingMode="outlined"
+        text="Modal"
+        routerLink="./pages/load"
+        type="success"
+        [width]="120"
+
+      >
 </dx-button>
+        </div>
+      </dxi-item>
+      <dxi-item title="Continuara......">
+          <p>en este apartado se debera crear cosas nuevas</p>
+      </dxi-item>
+  </dx-tab-panel>
 
-<dx-button
-            stylingMode="outlined"
-            text="Menu"
-            type="success"
-            routerLink="./pages/menu"
-            [width]="120"
-
-          >
-</dx-button>
-
-<dx-button
-            stylingMode="outlined"
-            text="DataGrid"
-            type="success"
-            routerLink="./pages/data-grid"
-            [width]="120"
-
-          >
-</dx-button>
-<dx-button
-            stylingMode="outlined"
-            text="ventana"
-            type="success"
-            routerLink="./pages/ventanas"
-            [width]="120"
-
-          >
-</dx-button>
-
-<dx-button
-            stylingMode="outlined"
-            text="Tree Map"
-            type="danger"
-            routerLink="./pages/tree"
-            [width]="120"
-
-          >
-</dx-button>
-
-<dx-button
-            stylingMode="outlined"
-            text="archivos"
-            type="default"
-            routerLink="./pages/archivos"
-            [width]="120"
-
-          >
-</dx-button>
-
-<dx-button
-            stylingMode="outlined"
-            text="form"
-            type="warm"
-            routerLink="./pages/form-upload"
-            [width]="120"
-
-          >
-</dx-button>
 </div>
+
+<div>
 <router-outlet></router-outlet>
+</div>

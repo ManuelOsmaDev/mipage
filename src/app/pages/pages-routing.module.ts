@@ -21,6 +21,8 @@ const routes: Routes = [
       {path:'tree',component:TreeComponent},
       {path:'archivos',component:ArchivosComponent},
       {path:'form-upload',component:FormUploadComponent},
+      {path:'load',component:LoadPanelComponent},
+
 
 
 
