@@ -1,0 +1,58 @@
+<div id="container">
+  <div id="buttons">
+    <dx-button (onClick)="showMessage()" text="Mostrar Mensaje"> </dx-button>
+    <dx-toast
+      [(visible)]="isVisible"
+      type="info"
+      message="tienes un mensaje nuevo"
+    >
+      <dxo-position></dxo-position>
+    </dx-toast>
+  </div>
+</div>
+
+<img id="image" src="../../../assets/imgs/favicon.ico" />
+<dx-popover target="#image" showEvent="dxhoverstart" hideEvent="dxhoverend">
+  <div *dxTemplate="let data of 'content'">
+    <p>Evertec content</p>
+  </div>
+</dx-popover>
+
+<p id="parrafo"><a>Que es?</a></p>
+<dx-popover
+  target="#parrafo"
+  showEvent="dxhoverstart"
+  hideEvent="dxhoverend"
+  [showCloseButton]="true"
+  [showTitle]="true"
+  [width]="200"
+  height="280"
+  position="center"
+  title="Evertec"
+  [hideOnOutsideClick]="false"
+>
+  <div *dxTemplate="let data of 'content'">
+    <p>
+      Evertec, una compañía de servicios de procesamiento de transacciones, se
+      destaca dentro de la industria como una organización que ha puesto como
+      eje del negocio la diversidad, equidad e inclusión.
+    </p>
+  </div>
+</dx-popover>
+
+
+<h2>Casilla verificacion</h2>
+<hr>
+
+<dx-check-box text="Compruebame">
+
+</dx-check-box>
+
+
+<h2>cuadro numerico</h2>
+<hr>
+
+
+<dx-number-box [value]="20" placeholder="Ingresa tu edad" [width]="200" [min]="16" [max]="100">
+
+</dx-number-box>

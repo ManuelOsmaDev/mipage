@@ -3,14 +3,18 @@ import { DxListModule, DxButtonModule, DxCheckBoxModule, DxDataGridModule, DxLoa
 import { DxToolbarModule, DxTextBoxModule } from 'devextreme-angular'
 import { DxTabPanelModule,DxMenuModule, DxSpeedDialActionModule } from "devextreme-angular";
 import { DxChartModule,DxFileUploaderModule } from 'devextreme-angular';
-import { DxTabsModule,DxFileManagerModule } from 'devextreme-angular';
-import { DxSwitchModule,DxScrollViewModule,DxPopupModule,DxSankeyModule,DxProgressBarModule,DxTreeMapModule,DxDrawerModule,DxRadioGroupModule} from 'devextreme-angular';
+import { DxTabsModule,DxFileManagerModule } from 'devextreme-angular';;
+import { DxNumberBoxModule,DxPopoverModule,DxToastModule,DxBoxModule,DxSwitchModule,DxScrollViewModule,DxPopupModule,DxSankeyModule,DxProgressBarModule,DxTreeMapModule,DxDrawerModule,DxRadioGroupModule} from 'devextreme-angular';
 
 
 @NgModule({
   declarations: [],
   exports:[
     DxListModule,
+    DxPopoverModule,
+    DxBoxModule,
+    DxNumberBoxModule,
+    DxToastModule,
     DxScrollViewModule,
     DxSwitchModule,
     DxPopupModule,

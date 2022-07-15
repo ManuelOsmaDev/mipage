@@ -12,6 +12,7 @@ import { TreeComponent } from './tree/tree.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { ArchivosComponent } from './archivos/archivos.component';
 import { FormUploadComponent } from './form-upload/form-upload.component';
+import { NotificacionComponent } from './notificacion/notificacion.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FormUploadComponent } from './form-upload/form-upload.component';
     NavegacionComponent,
     ArchivosComponent,
     FormUploadComponent,
+    NotificacionComponent,
   ],
   imports: [
     CommonModule,
