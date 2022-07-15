@@ -13,6 +13,8 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
 import { ArchivosComponent } from './archivos/archivos.component';
 import { FormUploadComponent } from './form-upload/form-upload.component';
 import { NotificacionComponent } from './notificacion/notificacion.component';
+import { ProgramadorComponent } from './programador/programador.component';
+import { TabpanelComponent } from './tabpanel/tabpanel.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { NotificacionComponent } from './notificacion/notificacion.component';
     ArchivosComponent,
     FormUploadComponent,
     NotificacionComponent,
+    ProgramadorComponent,
+    TabpanelComponent,
   ],
   imports: [
     CommonModule,

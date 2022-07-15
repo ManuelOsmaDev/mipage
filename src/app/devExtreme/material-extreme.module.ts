@@ -1,16 +1,45 @@
 import { NgModule } from '@angular/core';
-import { DxListModule, DxButtonModule, DxCheckBoxModule, DxDataGridModule, DxLoadPanelModule } from 'devextreme-angular';
-import { DxToolbarModule, DxTextBoxModule } from 'devextreme-angular'
-import { DxTabPanelModule,DxMenuModule, DxSpeedDialActionModule } from "devextreme-angular";
-import { DxChartModule,DxFileUploaderModule } from 'devextreme-angular';
-import { DxTabsModule,DxFileManagerModule } from 'devextreme-angular';;
-import { DxNumberBoxModule,DxPopoverModule,DxToastModule,DxBoxModule,DxSwitchModule,DxScrollViewModule,DxPopupModule,DxSankeyModule,DxProgressBarModule,DxTreeMapModule,DxDrawerModule,DxRadioGroupModule} from 'devextreme-angular';
-
+import {
+  DxListModule,
+  DxButtonModule,
+  DxCheckBoxModule,
+  DxDataGridModule,
+  DxLoadPanelModule,
+} from 'devextreme-angular';
+import { DxToolbarModule, DxTextBoxModule } from 'devextreme-angular';
+import {
+  DxTabPanelModule,
+  DxMenuModule,
+  DxSpeedDialActionModule,
+} from 'devextreme-angular';
+import { DxChartModule, DxFileUploaderModule } from 'devextreme-angular';
+import { DxTabsModule, DxFileManagerModule } from 'devextreme-angular';
+import {
+  DxFormModule,
+  DxSchedulerModule,
+  DxTooltipModule,
+  DxNumberBoxModule,
+  DxPopoverModule,
+  DxToastModule,
+  DxBoxModule,
+  DxSwitchModule,
+  DxScrollViewModule,
+  DxPopupModule,
+  DxSankeyModule,
+  DxProgressBarModule,
+  DxTreeMapModule,
+  DxDrawerModule,
+  DxRadioGroupModule,
+} from 'devextreme-angular';
 
 @NgModule({
   declarations: [],
-  exports:[
+  exports: [
     DxListModule,
+    DxRadioGroupModule,
+    DxTabPanelModule,
+    DxSchedulerModule,
+    DxTooltipModule,
     DxPopoverModule,
     DxBoxModule,
     DxNumberBoxModule,
@@ -36,6 +65,7 @@ import { DxNumberBoxModule,DxPopoverModule,DxToastModule,DxBoxModule,DxSwitchMod
     DxFileUploaderModule,
     DxSpeedDialActionModule,
     DxTabPanelModule,
-  ]
+    DxFormModule,
+  ],
 })
-export class MaterialExtremeModule { }
+export class MaterialExtremeModule {}

@@ -9,6 +9,8 @@ import { TreeComponent } from './tree/tree.component';
 import { ArchivosComponent } from './archivos/archivos.component';
 import { FormUploadComponent } from './form-upload/form-upload.component';
 import { NotificacionComponent } from './notificacion/notificacion.component';
+import { ProgramadorComponent } from './programador/programador.component';
+import { TabpanelComponent } from './tabpanel/tabpanel.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,8 @@ const routes: Routes = [
       {path:'form-upload',component:FormUploadComponent},
       {path:'load',component:LoadPanelComponent},
       {path:'notify',component:NotificacionComponent},
+      {path:'programador',component:ProgramadorComponent},
+      {path:'tabpanel',component:TabpanelComponent},
 
 
 

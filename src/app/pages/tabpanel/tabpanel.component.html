@@ -1,0 +1,48 @@
+<dx-tab-panel
+  id="tabpanel"
+  [loop]="true"
+  [animationEnabled]="true"
+  [swipeEnabled]="true"
+  [(selectedIndex)]="selectedTabIndex"
+>
+  <dxi-item title="Empleado" icon="floppy">
+    <div *dxTemplate>
+      <dx-form [formData]="employeeData">
+        <dxi-item dataField="Nombre"></dxi-item>
+        <dxi-item dataField="Ocupacion"></dxi-item>
+        <dxi-item dataField="FechaEntrada"></dxi-item>
+        <dxi-item dataField="NumeroOficina"></dxi-item>
+      </dx-form>
+    </div>
+  </dxi-item>
+
+  <dxi-item title="Notas" icon="Comment" badge="new">
+    <div *dxTemplate>
+      <dxi-item [width]="200" [height]="2000">
+        <p>
+          Jose Manuel Sanchez Osma is un desarrollador desde el año 2020 con
+          algunos conocimientos basicos de programas
+        </p>
+      </dxi-item>
+    </div>
+  </dxi-item>
+
+  <dxi-item title="Roles" icon="isnotblank">
+    <div *dxTemplate="">
+      <dx-radio-group
+        id="radioGroup"
+        [items]="employeeData.Rol"
+        [(value)]="employeeData.Rol[0]"
+      >
+      </dx-radio-group>
+    </div>
+  </dxi-item>
+</dx-tab-panel>
+
+<dx-radio-group
+  [items]="tabNames"
+  [value]="tabNames[selectedTabIndex]"
+  layout="horizontal"
+  (onValueChanged)="onValueChanged($event)"
+>
+</dx-radio-group>

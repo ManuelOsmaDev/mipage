@@ -56,3 +56,14 @@
 <dx-number-box [value]="20" placeholder="Ingresa tu edad" [width]="200" [min]="16" [max]="100">
 
 </dx-number-box>
+
+
+<h2>vision general</h2>
+<hr>
+
+<img src="../../../assets/imgs/favicon.ico" id="imagen">
+<dx-tooltip target="#imagen" showEvent="dxhoverstart" hideEvent="dxhoverend" >
+  <div *dxTemplate="let data of 'content'">
+    <p>Toolpip contennt</p>
+  </div>
+</dx-tooltip>
